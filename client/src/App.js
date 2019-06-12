@@ -17,6 +17,7 @@ class App extends Component {
         </div>
 
         <Search/>
+        <hr/>
         <Saved/>
 
       </div>
