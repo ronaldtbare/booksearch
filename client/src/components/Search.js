@@ -5,12 +5,12 @@ import "../App.css";
 function Search() {
    
         return (
-            <div className="Search">
+            <div className="search">
                 <h1>Book Search</h1>
                 <form>
                     <div className="form-group">
-                        <label for="search">Book </label>
-                        <input type="email" className="form-control" id="search" aria-describedby="searchHelp" placeholder="Enter a search term."></input>
+                        
+                        <input type="email" className="form-control" id="search" aria-describedby="searchHelp" placeholder="Enter a search title."></input>
                             
                     </div>
                                 <button type="submit" className="btn btn-primary">Submit</button>

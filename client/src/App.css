@@ -1,3 +1,8 @@
+body{
+  background-color: aquamarine;
+}
+
+
 .App {
   text-align: center;
 }
@@ -23,8 +28,23 @@
   to { transform: rotate(360deg); }
 }
 
-.Search{
+.search{
   border: black;
+  border-radius: 20px;
   border-style: solid;
   border-width: 4px;
+  padding:30px;
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  
+}
+
+.bgimage{
+  background-image: url("./images/booksdark.jpg");
+
+}
+
+.color-white{
+  color: white;
 }
