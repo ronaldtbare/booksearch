@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-function ResultBook({ title }) {
+function ResultBook({ title, subtitle, authors, cover, description }) {
 
     return (
         <div className="savedbook">
@@ -9,6 +9,8 @@ function ResultBook({ title }) {
                 <div className="row">
                     <div className="col-sm">
                         <h2>{title}</h2>
+                        <h4>{subtitle}</h4>
+                        <h5>Author: {authors}</h5>
                     </div>
                     <div className="col-sm">
                         <button type="button" className="btn btn-secondary">View</button>
@@ -17,10 +19,10 @@ function ResultBook({ title }) {
                 </div>
                 <div className="row">
                     <div className="col-sm">
-                        Book Cover
+                        <img src ={cover} alt="book cover pic"/>
                     </div>
                     <div className="col-sm">
-                        <p className="synopsis">This is a synopsis of the book. The book book is about something really cool. Great things happened in the book. The main character is a bit of an enigma.</p>
+                        <p className="synopsis">{description}</p>
                     </div>
                 </div>
             </div>
