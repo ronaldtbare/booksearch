@@ -21,6 +21,15 @@
   "dependencies": {
     "axios": "^0.19.0",
     "express": "^4.16.3",
-    "if-env": "^1.0.4"
-  }
+    "if-env": "^1.0.4",
+    "mini-create-react-context": "^0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldtbare/booksearch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ronaldtbare/booksearch/issues"
+  },
+  "homepage": "https://github.com/ronaldtbare/booksearch#readme"
 }

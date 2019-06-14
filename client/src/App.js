@@ -6,24 +6,32 @@ import ResultsList from "./components/ResultsList.js";
 import SavedBooksList from "./components/SavedBooksList.js";
 
 import Jumbotron from "./components/Jumbotron.js";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav.js";
+
+import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Nav/>
-
-        <Jumbotron/>
-
-        <Search/>
-        <hr/>
-        <ResultsList/>
-        <SavedBooksList/>
+      <BrowserRouter>
+        <div>
+          <Nav />
+          <Jumbotron/>
+          <hr />
+          <switch>
+            <Route path="/" component={Search} exact/>
+            <Route path="/" component={ResultsList} exact/>
+            <Route path="/search" component={Search}/>
+            <Route path="/search" component={ResultsList} />
+            <Route path="/save" component={SavedBooksList} />
+          </switch>
+        </div>
+      </BrowserRouter>
+        
           
         
 
-      </div>
+      
     );
   }
 }
