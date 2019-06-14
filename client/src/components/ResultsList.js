@@ -26,6 +26,7 @@ class ResultsList extends React.Component {
                     authors={el.volumeInfo.authors}
                     cover={el.volumeInfo.imageLinks.thumbnail}
                     description={el.volumeInfo.description}
+                    previewLink={el.volumeInfo.previewLink}
                     />)}
                 </div>
             </div>
