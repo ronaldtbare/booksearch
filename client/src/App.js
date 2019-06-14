@@ -20,9 +20,8 @@ class App extends Component {
           <hr />
           <switch>
             <Route path="/" component={Search} exact/>
-            <Route path="/" component={ResultsList} exact/>
-            <Route path="/search" component={Search}/>
-            <Route path="/search" component={ResultsList} />
+            <Route path="/search" component={Search} exact/>
+            <Route path="/search/:searchTerm" component={ResultsList} exact />
             <Route path="/save" component={SavedBooksList} />
           </switch>
         </div>

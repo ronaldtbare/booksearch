@@ -20,7 +20,7 @@ function SavedBook() {
                         Book Cover
                     </div>
                     <div className="col-sm">
-                        Synopsis
+                        <p className="synopsis">This is a synopsis of the book. The book book is about something really cool. Great things happened in the book. The main character is a bit of an enigma.</p>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,14 @@
 import React from "react";
 import "../App.css";
 
-function ResultBook() {
+function ResultBook({ title }) {
 
     return (
         <div className="savedbook">
             <div className="container">
                 <div className="row">
                     <div className="col-sm">
-                        <h2>Book Title</h2>
+                        <h2>{title}</h2>
                     </div>
                     <div className="col-sm">
                         <button type="button" className="btn btn-secondary">View</button>
@@ -20,7 +20,7 @@ function ResultBook() {
                         Book Cover
                     </div>
                     <div className="col-sm">
-                        Synopsis
+                        <p className="synopsis">This is a synopsis of the book. The book book is about something really cool. Great things happened in the book. The main character is a bit of an enigma.</p>
                     </div>
                 </div>
             </div>
