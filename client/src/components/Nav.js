@@ -11,7 +11,7 @@ function Nav() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                     <NavLink activeClassName="active" to="/search" className="nav-item nav-link">Search <span className="sr-only">(current)</span></NavLink>
-                    <NavLink activeClassName="active" to="/save" className="nav-item nav-link">Save <span className="sr-only">(current)</span></NavLink>
+                    <NavLink activeClassName="active" to="/save" className="nav-item nav-link">Saved Books <span className="sr-only">(current)</span></NavLink>
                 </div>
             </div>
             

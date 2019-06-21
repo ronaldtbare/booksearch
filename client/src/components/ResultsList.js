@@ -11,8 +11,7 @@ class ResultsList extends React.Component {
             .then(response => response.json())
             .then(data => this.setState({ books: data.items }))
             .then(data => console.log)
-            .catch(error => console.log);
-           
+            .catch(error => console.log);   
     }
     
     render() {
