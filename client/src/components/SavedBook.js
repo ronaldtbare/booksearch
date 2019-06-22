@@ -1,11 +1,11 @@
 import React from "react";
 import "../App.css";
 
-function SavedBook({title, subtitle, authors, cover, previewLink, description}) {
 
-    function deleteBook(){
 
-    }
+function SavedBook({title, subtitle, authors, cover, previewLink, description,bookID, deleteBook}) {
+
+    
 
     return (
         <div className="savedbook">
@@ -18,7 +18,7 @@ function SavedBook({title, subtitle, authors, cover, previewLink, description}) 
                     </div>
                     <div className="col-sm">
                         <a className="btn btn-primary" href={previewLink} target="_blank" role="button">View</a>
-                        <a className="btn btn-primary" onClick={()=>deleteBook} role="button">Delete</a>                      
+                        <a className="btn btn-primary" onClick={()=>deleteBook(bookID)} role="button">Delete</a>                      
                     </div>
                 </div>
                 <div className="row">

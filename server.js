@@ -47,9 +47,9 @@ app.post("/savebook", async (request, response) => {
   }
 });
 
-app.delete("/deletebook", async (request, response) => {
+app.delete("/deletebook/:bookID", async (request, response) => {
   try {
-    var deleteBook = await BookModel.deleteOne({ _id: request.params.id }).exec();
+    var deleteBook = await BookModel.deleteOne({ _id: request.params.bookID }).exec();
     response.send(deleteBook);
   } catch (error) {
     response.status(500).send(error);
